@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: 'ubuntu-latest'
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Install Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version-file: .tool-versions
+    - uses: pnpm/action-setup@v4
+    - run: pnpm install
+    - run: pnpm run lint
+    - run: pnpm run prettier-check
+    - run: pnpm run type-check
+  test:
+    name: Test
+    runs-on: 'ubuntu-latest'
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Install Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version-file: .tool-versions
+    - uses: pnpm/action-setup@v4
+    - run: pnpm install
+    - run: pnpm test
+  build:
+    name: Build
+    runs-on: 'ubuntu-latest'
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Install Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version-file: .tool-versions
+    - uses: pnpm/action-setup@v4
+    - run: pnpm install
+    - run: pnpm run build
+
