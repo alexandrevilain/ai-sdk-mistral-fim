@@ -15,7 +15,7 @@ changelog:
     - title: 🔨 Dependencies
       labels:
         - dependencies
-    - title: Misc
+    - title: Other
       labels:
         - '*'
       exclude:
