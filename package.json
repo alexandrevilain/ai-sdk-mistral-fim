@@ -8,7 +8,8 @@
   "types": "./dist/index.d.ts",
   "files": [
     "dist/**/*",
-    "CHANGELOG.md"
+    "README.md",
+    "LICENSE"
   ],
   "type": "module",
   "scripts": {
@@ -19,7 +20,8 @@
     "type-check": "tsc --build",
     "prettier-check": "prettier --check \"./**/*.ts*\"",
     "test": "vitest --config vitest.config.mjs --run",
-    "test:watch": "vitest --config vitest.config.mjs"
+    "test:watch": "vitest --config vitest.config.mjs",
+    "prepare": "npm run build"
   },
   "packageManager": "pnpm@10.15.0",
   "exports": {
