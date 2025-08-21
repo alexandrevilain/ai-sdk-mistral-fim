@@ -60,5 +60,14 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexandrevilain/ai-sdk-mistral-fim.git"
+  },
+  "author": "Alexandre VILAIN",
+  "bugs": {
+    "url": "https://github.com/alexandrevilain/ai-sdk-mistral-fim/issues"
+  },
+  "homepage": "https://github.com/alexandrevilain/ai-sdk-mistral-fim"
 }
