@@ -12,8 +12,8 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0
       '@ai-sdk/provider-utils':
-        specifier: ^3.0.4
-        version: 3.0.4(zod@4.0.17)
+        specifier: ^3.0.8
+        version: 3.0.8(zod@4.0.17)
     devDependencies:
       '@changesets/cli':
         specifier: ^2.29.6
@@ -60,8 +60,8 @@ importers:
 
 packages:
 
-  '@ai-sdk/provider-utils@3.0.4':
-    resolution: {integrity: sha512-/3Z6lfUp8r+ewFd9yzHkCmPlMOJUXup2Sx3aoUyrdXLhOmAfHRl6Z4lDbIdV0uvw/QYoBcVLJnvXN7ncYeS3uQ==}
+  '@ai-sdk/provider-utils@3.0.8':
+    resolution: {integrity: sha512-cDj1iigu7MW2tgAQeBzOiLhjHOUM9vENsgh4oAVitek0d//WdgfPCsKO3euP7m7LyO/j9a1vr/So+BGNdpFXYw==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.25.76 || ^4
@@ -1226,9 +1226,9 @@ packages:
     resolution: {integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==}
     engines: {node: '>=0.10.0'}
 
-  eventsource-parser@3.0.5:
-    resolution: {integrity: sha512-bSRG85ZrMdmWtm7qkF9He9TNRzc/Bm99gEJMaQoHJ9E6Kv9QBbsldh2oMj7iXmYNEAVvNgvv5vPorG6W+XtBhQ==}
-    engines: {node: '>=20.0.0'}
+  eventsource-parser@3.0.6:
+    resolution: {integrity: sha512-Vo1ab+QXPzZ4tCa8SwIHJFaSzy4R6SHf7BY79rFBDf0idraZWAkYrDjDj8uWaSm3S2TK+hJ7/t1CEmZ7jXw+pg==}
+    engines: {node: '>=18.0.0'}
 
   expect-type@1.2.2:
     resolution: {integrity: sha512-JhFGDVJ7tmDJItKhYgJCGLOWjuK9vPxiXoUFLwLDc99NlmklilbiQJwoctZtt13+xMw91MCk/REan6MWHqDjyA==}
@@ -2380,23 +2380,17 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  zod-to-json-schema@3.24.6:
-    resolution: {integrity: sha512-h/z3PKvcTcTetyjl1fkj79MHNEjm+HpD6NXheWjzOekY7kV+lwDYnHw+ivHkijnCSMz1yJaWBD9vu/Fcmk+vEg==}
-    peerDependencies:
-      zod: ^3.24.1
-
   zod@4.0.17:
     resolution: {integrity: sha512-1PHjlYRevNxxdy2JZ8JcNAw7rX8V9P1AKkP+x/xZfxB0K5FYfuV+Ug6P/6NVSR2jHQ+FzDDoDHS04nYUsOIyLQ==}
 
 snapshots:
 
-  '@ai-sdk/provider-utils@3.0.4(zod@4.0.17)':
+  '@ai-sdk/provider-utils@3.0.8(zod@4.0.17)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
       '@standard-schema/spec': 1.0.0
-      eventsource-parser: 3.0.5
+      eventsource-parser: 3.0.6
       zod: 4.0.17
-      zod-to-json-schema: 3.24.6(zod@4.0.17)
 
   '@ai-sdk/provider@2.0.0':
     dependencies:
@@ -3753,7 +3747,7 @@ snapshots:
 
   esutils@2.0.3: {}
 
-  eventsource-parser@3.0.5: {}
+  eventsource-parser@3.0.6: {}
 
   expect-type@1.2.2: {}
 
@@ -5020,9 +5014,5 @@ snapshots:
   wrappy@1.0.2: {}
 
   yocto-queue@0.1.0: {}
-
-  zod-to-json-schema@3.24.6(zod@4.0.17):
-    dependencies:
-      zod: 4.0.17
 
   zod@4.0.17: {}
